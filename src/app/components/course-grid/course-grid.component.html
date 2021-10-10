@@ -1,0 +1,10 @@
+<div class="gridBox">
+    <div class="course-item">
+        <div class="name"><input type="text"   readonly="true" value="Name"></div>
+        <div class="points"><input type="text" readonly="true" value="Points"></div>
+        <div class="earned"><input type="text" readonly="true" value="Earned(%)"></div>
+        <div class="needed"><input type="text" readonly="true" value="Needed(%)"></div>
+        <div class="remove"></div>
+    </div>
+    <app-course-item *ngFor="let item of courseItems; let i = index trackBy: trackByFn" [index]="i" [item]="item" (itemChanged)="onItemChanged($event, i)"></app-course-item>
+</div>

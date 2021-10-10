@@ -1,0 +1,172 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #282c34;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.description {
+  padding: 0px 20px 20px 20px;
+  width: 60%;
+  font-size: calc(4px + 2vmin);
+  text-align: center;
+  margin: auto;
+}
+
+.controlBar {
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.controlsBtn {
+  border: 2px solid white;
+  background-color: #282c34;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.controlsBtn:active {
+  transform: scale(0.95)
+}
+
+#addBtn {
+  border-color: #04AA6D;
+  color: green;
+}
+
+#addBtn:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+#switchBtn {
+  border-color: #0491aa;
+  color: aqua;
+}
+
+#switchBtn:hover {
+  background-color: #0491aa;
+  color: white;
+}
+
+#clearBtn {
+  border-color: #aa0404;
+  color: red;
+}
+
+#clearBtn:hover {
+  background-color: #aa0404;
+  color: white;
+}
+
+.desiredGrade {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border: 2px solid white;
+  width: fit-content;
+}
+
+.desiredGrade>span {
+  font-size: calc(10px + 2vmin);
+}
+
+.desiredGradeInput {
+  background-color: #282c34;
+  color: white;
+  border: none;
+  outline: none;
+  text-align: center;
+  margin: 0;
+  font-size: calc(10px + 2vmin);
+  border-bottom: 2px solid white;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.course-item {
+  display: flex;
+  vertical-align: middle;
+}
+
+.course-item > div {
+  border: 1px solid white;
+  overflow: hidden;
+}
+
+.course-item > div >  input {
+  background-color: #282c34;
+  color: white;
+  border: none;
+  outline: none;
+  text-align: center;
+  min-width: none;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: calc(5px + 2vmin);
+}
+
+.controlsBtn.red {
+  margin: 0;
+  border-color: #aa0404;
+  color: red;
+  padding: 0;
+  font-size: calc(5px + 2vmin);
+}
+
+.controlsBtn.red:hover {
+  background-color: #aa0404;
+  color: white;
+}
+
+
+.name {
+  flex: 4;    
+}
+
+.points {
+  flex: 2;    
+}
+
+.earned {
+  flex: 2;    
+}
+
+.needed {
+  flex: 2;    
+}
+
+.remove {
+  flex: 1;    
+}
